@@ -3,32 +3,31 @@
 <body>
   <h1>7-Segment 1-Digit Display</h1>
   
-  <pre>
-    void setup() {
-    // put your setup code here, to run once:
-    pinMode(1,OUTPUT);
-    pinMode(2,OUTPUT);
-    pinMode(3,OUTPUT);
-    pinMode(4,OUTPUT);
-    pinMode(5,OUTPUT);
-    pinMode(6,OUTPUT);
-    pinMode(7,OUTPUT);
-    pinMode(8,OUTPUT);
-    }
-  </pre>
-  <pre>
-    void loop() {
-    // put your main code here, to run repeatedly:
-    // Display Zero:
-    digitalWrite(1,HIGH);
-    digitalWrite(2,HIGH);
-    digitalWrite(3,HIGH);
-    digitalWrite(4,HIGH);
-    digitalWrite(5,LOW);
-    digitalWrite(6,HIGH);
-    digitalWrite(7,HIGH);
-    digitalWrite(8,HIGH);
-    }
+<pre>
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(1,OUTPUT);
+  pinMode(2,OUTPUT);
+  pinMode(3,OUTPUT);
+  pinMode(4,OUTPUT);
+  pinMode(5,OUTPUT);
+  pinMode(6,OUTPUT);
+  pinMode(7,OUTPUT);
+  pinMode(8,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  // Display Zero:
+  digitalWrite(1,HIGH);
+  digitalWrite(2,HIGH);
+  digitalWrite(3,HIGH);
+  digitalWrite(4,HIGH);
+  digitalWrite(5,LOW);
+  digitalWrite(6,HIGH);
+  digitalWrite(7,HIGH);
+  digitalWrite(8,HIGH);
+}
   </pre>
 
   <p>
@@ -46,8 +45,7 @@ void displayONE() {
   digitalWrite(7, HIGH);
   digitalWrite(8, LOW);
 }
-  </pre>
-  <pre>
+
 void displayTWO() {
   digitalWrite(1, HIGH);
   digitalWrite(2, HIGH);
@@ -58,8 +56,7 @@ void displayTWO() {
   digitalWrite(7, HIGH);
   digitalWrite(8, HIGH);
 }
-  </pre>
-  <pre>
+
 void displayTHREE() {
   digitalWrite(1, LOW);
   digitalWrite(2, HIGH);
@@ -70,8 +67,7 @@ void displayTHREE() {
   digitalWrite(7, HIGH);
   digitalWrite(8, HIGH);
 }
-  </pre>
-  <pre>
+
 void displayFOUR() {
   digitalWrite(1, LOW);
   digitalWrite(2, LOW);
@@ -93,8 +89,7 @@ void displayFIVE() {
   digitalWrite(7, HIGH);
   digitalWrite(8, LOW);
 }
-  </pre>
-  <pre>
+
 void displaySIX() {
   digitalWrite(1, HIGH);
   digitalWrite(2, HIGH);
@@ -116,8 +111,7 @@ void displaySEVEN() {
   digitalWrite(7, HIGH);
   digitalWrite(8, HIGH);
 }
-  </pre>
-  <pre>
+
 void displayEIGHT() {
   digitalWrite(1, HIGH);
   digitalWrite(2, HIGH);
@@ -128,8 +122,7 @@ void displayEIGHT() {
   digitalWrite(7, HIGH);
   digitalWrite(8, HIGH);
 }
-  </pre>
-  <pre>
+
 void displayNINE() {
   digitalWrite(1, LOW);
   digitalWrite(2, HIGH);
