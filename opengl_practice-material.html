@@ -111,11 +111,11 @@ void reshape(int width, int height) {
     
     // Set up perspective view (makes things look 3D)
     float aspectRatio = (float)width / (float)height;
-    gluPerspective(45.0f,        // Field of view angle
+    gluPerspective(45.0f,         // Field of view angle
                    aspectRatio,   // Aspect ratio 
-                   0.1f,         // Near clipping plane
-                   100.0f);      // Far clipping plane
-    
+                   0.1f,          // Near clipping plane
+                   100.0f);       // Far clipping plane
+
     // Switch back to model matrix for drawing
     glMatrixMode(GL_MODELVIEW);
 }
