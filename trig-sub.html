@@ -95,8 +95,8 @@ if Case <b>Two</b>:
     *-----*
        a
 use:
-     <b>tan&theta;</b> = <sup>x</sup>/<sub>2</sub>  ~~> To solve the x & dx
-     <b>cos&theta;</b> = <sup>a</sup>/<sub>&radic;(a²-x²)</sub>  ~~> To solve for the &radic;(a²-x²)
+     <b>tan&theta;</b> = <sup>x</sup>/<sub>a</sub>  ~~> To solve the x & dx
+     <b>cos&theta;</b> = <sup>a</sup>/<sub>&radic;(a²+x²)</sub>  ~~> To solve for the &radic;(a²-x²)
 
 if Case <b>Three</b>:
       *
@@ -117,9 +117,18 @@ use:
 <h2>Step 3: Isolate x, dx, and f(x)</h2>
 
 <pre>
-<b>Case 1:</b>
+<b>Case 1:</b> &radic;(a²-x²)
      x = <sup>a</sup>/<sub>x</sub>*sin&theta;
-    dx = <sup>a</sup>/<sub>x</sub>*cos&theta;
-     
+    dx = <sup>a</sup>/<sub>x</sub>*cos&theta;     
   f(x) = a*cos&theta;
+
+<b>Case 2:</b> &radic;(a²-x²)
+     x = <sup>a</sup>/<sub>x</sub>*tan&theta;
+    dx = <sup>a</sup>/<sub>x</sub>*sec²&theta; 
+  f(x) = <sup>a</sup>/<sub>cos&theta;</sub>, or &radic;(a²-x²) = a*sec&theta;
+
+<b>Case 3:</b> &radic;(x²-a²)
+     x = <sup>a</sup>/<sub>x*cos&theta;</sub>, or x = a*sec&theta;
+    dx = <sup>a</sup>/<sub>x</sub>*sec²&theta; 
+  f(x) = <sup>a</sup>/<sub>cos&theta;</sub>, or &radic;(x²-a²) = a*sec&theta;
 </pre>
