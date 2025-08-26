@@ -1,0 +1,251 @@
+<h1>Integration by Trigonometric Substitution</h1>
+
+<h3>
+Step 1: Setting-up the Triangle
+</h3>
+
+<pre>
+let: a = constant, x = variable, f(x) = &radic;(&plusmn;a²&plusmn;x²)
+     a cannot be in the Vertical Length/Opposite
+<b>First</b> case: &radic;(a²-x²)
+<b> [a²+(-<s>x</s>)²]+<s>x</s>²=a² </b>
+   <b>></b> "isolated one is the Hypotenuse", the hypotenuse can only be 'a'
+   <b>></b> Since 'a' comes first in <b>&radic;(a²-x²)</b>, the f(x) is in the Adjacent.
+   <b>></b> Leaving x in the Opposite.
+    /\
+   /  \
+  /    \
+ /      \
+/        \*-------*
+\   <b>a²</b>   / |      |
+ \      /  |      |
+  \    /   |  <b>x²</b>  |
+   \  /    |      |
+    \/&theta;)   |      |
+    *------*------*
+     |     |
+     |<b>a²-x²</b>|
+     |     |
+     *-----*
+
+<b>Second</b> case: &radic;(a²+x²)
+<b> [a²]+[x²]=a²+x² </b>
+   <b>></b> "isolated one is the Hypotenuse", the hypotenuse can only be the f(x).
+   <b>></b> Since 'a' cannot be in the Vectical Side, it's in the adjacent.
+   <b>></b> Leaving x in the Opposite.
+    /\
+   /  \
+  /    \
+ /      \
+/        \*-------*
+\ <b>a²+x²</b>  / |      |
+ \      /  |      |
+  \    /   |  <b>x²</b>  |
+   \  /    |      |
+    \/&theta;)   |      |
+    *------*------*
+     |     |
+     |  <b>a²</b> |
+     |     |
+     *-----*
+
+<b>Third</b> case: &radic;(x²-a²)
+<b> [x²+(-<s>a</s>)²]+<s>a</s>²=x² </b>
+   <b>></b> "isolated one is the Hypotenuse", the hypotenuse can only be 'x'.
+   <b>></b> Since 'a' cannot be in the Vectical Side, it's in the adjacent.
+   <b>></b> Leaving the f(x) in the Opposite.
+    /\
+   /  \
+  /    \
+ /      \
+/        \*-------*
+\   <b>x²</b>   / |      |
+ \      /  |      |
+  \    /   | <b>x²-a²</b>|
+   \  /    |      |
+    \/&theta;)   |      |
+    *------*------*
+     |     |
+     |  <b>a²</b> |
+     |     |
+     *-----*
+
+</pre>
+
+<h3>
+Step 2: Get x, dx, and f(x)
+</h3>
+
+<pre>
+if Case <b>One</b>:
+      *
+     /|  
+    / | 
+ a /  |
+  /   | x 
+ /&theta;)  | 
+*-----*
+<b>&radic;(a²-x²)</b>
+use:
+     <b>sin&theta;</b> = <sup>x</sup>/<sub>2</sub>        ~~> To solve the x & dx
+     <b>cos&theta;</b> = <sup>&radic;(a²-x²)</sup>/<sub>a</sub>  ~~> To solve for the &radic;(a²-x²)
+
+if Case Two:
+          *
+<b>&radic;(a²+x²)</b> /|
+        / |
+       /  |
+      /   | x
+     /&theta;)  |
+    *-----*
+       a
+use:
+     <b>tan&theta;</b> = <sup>x</sup>/<sub>a</sub>        ~~> To solve the x & dx
+     <b>cos&theta;</b> = <sup>a</sup>/<sub>&radic;(a²+x²)</sub>  ~~> To solve for the &radic;(a²+x²)
+
+if Case Three:
+      *
+     /|  
+    / | 
+ x /  |
+  /   | <b>&radic;(x²-a²)</b>
+ /θ)  | 
+*-----*
+   a
+use:
+     <b>cos&theta;</b> = <sup>a</sup>/<sub>x</sub>        ~~> To solve the x & dx
+     <b>tan&theta;</b> = <sup>&radic;(x²-a²)</sup>/<sub>a</sub>  ~~> To solve for the &radic;(a²-x²)
+
+</pre>
+
+
+<h3>
+Step 3: Isolate x, dx, and f(x)
+</h3>
+
+<pre>
+<b>Case 1:</b> &radic;(a²-x²)
+     x = <sup>a</sup>/<sub>x</sub>*sin&theta;
+    dx = <sup>a</sup>/<sub>x</sub>*cos&theta;     
+  f(x) = a*cos&theta;
+
+<b>Case 2:</b> &radic;(a²+x²)
+     x = <sup>a</sup>/<sub>x</sub>*tan&theta;
+    dx = <sup>a</sup>/<sub>x</sub>*sec²&theta; 
+  f(x) = <sup>a</sup>/<sub>cos&theta;</sub>, or &radic;(a²+x²) = a*sec&theta;
+
+<b>Case 3:</b> &radic;(x²-a²)
+     x = <sup>a</sup>/<sub>x*cos&theta;</sub>, 
+       = a*sec&theta;
+    dx = <sup>a</sup>/<sub>x</sub>*sec²&theta; 
+  f(x) = <sup>a</sup>/<sub>cos&theta;</sub>, or &radic;(x²-a²) = a*sec&theta;
+</pre>
+
+
+<h4>
+Step 4: Substitute x, dx, f(x), and simplify
+
+</h4>
+
+<h4>
+Step 5: Integrate Trig-function, after that revert back to f(x) or Step 1 values
+
+</h4>
+
+
+<h3>
+Integration of Trigonometric Function
+</h3>
+<pre>
+Case 1: n = <b>Odd</b>
+  a) ∫sin<sup>n</sup>xdx
+   = ∫(sin<sup>n-1</sup>x)sinxdx
+       sin<sup>2</sup>x=1-cos<sup>2</sup>x
+
+  b) ∫cos<sup>n</sup>xdx
+   = ∫(cos<sup>n-1</sup>x)cosxdx
+       cos<sup>2</sup>x=1-sin<sup>2</sup>x
+
+Case 2: either n or m is <b>Odd/Even</b>, <b>basta may isang Odd</b>
+  ∫sin<sup>n</sup>cos<sup>m</sup>xdx
+     i) n = +Odd int.
+      = ∫sin<sup>n-1</sup>xcos<sup>m</sup>xsinxdx
+      = ∫(sin<sup>2</sup>x)<sup><sup>n-1</sup>/2</sup>xcos<sup>m</sup>xsinxdx
+          sin<sup>2</sup>x=1-cos<sup>2</sup>x
+
+     ii) m = +Odd int.
+      = ∫sin<sup>n</sup>xcos<sup>m-1</sup>xcosxdx
+      = ∫sin<sup>n</sup>(cos<sup>2</sup>x)<sup><sup>m-1</sup>/2</sup>xcosxdx
+              cos<sup>2</sup>x=1-sin<sup>2</sup>x
+
+Case 3: n = <b>Even</b>, m = <b>Even</b>
+  a) ∫sin<sup>n</sup>xdx
+   = ∫(sin<sup>2</sup>x)<sup><sup>n</sup>/2</sup>dx
+       sin<sup>2</sup>x=<sup>1-cos<sup>2</sup>x</sup>/2
+  b) ∫cos<sup>n</sup>xdx
+   = ∫(cos<sup>2</sup>x)<sup><sup>n</sup>/2</sup>dx
+       cos<sup>2</sup>x=<sup>1+cos<sup>2</sup>x</sup>/2
+
+  c) ∫sin<sup>n</sup>xcos<sup>m</sup>xdx
+   = ∫(sin<sup>2</sup>x)<sup><sup>n</sup>/2</sup>(cos<sup>2</sup>x)<sup><sup>m</sup>/2</sup>dx
+
+
+Case 4: n = <b>Odd</b> or <b>Even</b>
+  a) ∫tan<sup>n</sup>xdx
+   = ∫tan<sup>n-2</sup>xtan<sup>2</sup>xdx
+             tan<sup>2</sup>x=sec<sup>2</sup>x-1
+
+  b) ∫cot<sup>n</sup>xdx
+   = ∫cot<sup>n-2</sup>xcot<sup>2</sup>xdx
+             cot<sup>2</sup>x=csc<sup>2</sup>x-1
+
+Case 5: n = <b>Even</b>
+  a) ∫sec<sup>n</sup>xdx
+   = ∫sec<sup>n-2</sup>xsec<sup>2</sup>xdx
+   = ∫(sec<sup>2</sup>x)<sup><sup>n-2</sup>/2</sup>sec<sup>2</sup>xdx
+       sec<sup>2</sup>x=tan<sup>2</sup>x+1
+
+  b) ∫csc<sup>n</sup>xdx
+   = ∫csc<sup>n-2</sup>xcsc<sup>2</sup>xdx
+   = ∫(csc<sup>2</sup>x)<sup><sup>n-2</sup>/2</sup>csc<sup>2</sup>xdx
+       csc<sup>2</sup>x=1+cot<sup>2</sup>x
+
+Case 6: n = <b>Odd/Even</b>, m = <b>Even</b>
+  a) ∫tan<sup>n</sup>xsec<sup>m</sup>xdx
+   = ∫tan<sup>n</sup>xsec<sup>m-2</sup>xsec<sup>2</sup>xdx
+   = ∫tan<sup>n</sup>x(sec<sup>2</sup>x)<sup><sup>m-2</sup>/2</sup>sec<sup>2</sup>xdx
+            sec<sup>2</sup>x=tan<sup>2</sup>x+1
+
+  b) ∫cot<sup>n</sup>xcsc<sup>m</sup>xdx
+   = ∫cot<sup>n</sup>xcsc<sup>m-2</sup>xcsc<sup>2</sup>xdx
+   = ∫cot<sup>n</sup>x(csc<sup>2</sup>x)<sup><sup>m-2</sup>/2</sup>csc<sup>2</sup>xdx
+            csc<sup>2</sup>x=1+cot<sup>2</sup>x
+
+Case 7: n = <b>Odd</b>, m = <b>Odd</b>
+  a) ∫tan<sup>n</sup>xsec<sup>m</sup>xdx
+   = ∫tan<sup>n-1</sup>xsec<sup>m-1</sup>xsecxtanxdx
+   = ∫(tan<sup>2</sup>x)<sup><sup>n-1</sup>/2</sup>sec<sup>m-1</sup>xsecxtanxdx
+      tan<sup>2</sup>x=sec<sup>2</sup>x-1
+
+  b) ∫cot<sup>n</sup>xcsc<sup>m</sup>xdx
+   = ∫cot<sup>n-1</sup>xcsc<sup>m-1</sup>xcscxcotxdx
+   = ∫(cot<sup>2</sup>x)<sup><sup>n-1</sup>/2</sup>csc<sup>m-1</sup>xcscxcotxdx
+      cot<sup>2</sup>x=csc<sup>2</sup>x-1
+
+Case 8: n = <b>Odd</b>
+  a) ∫sec<sup>n</sup>xdx = ∫sec<sup>n-2</sup>xsec<sup>2</sup>xdx
+               u=sec<sup>n-2</sup>x  dv=sec<sup>2</sup>xdx
+
+  b) ∫csc<sup>n</sup>xdx = ∫csc<sup>n-2</sup>xcsc<sup>2</sup>xdx
+               u=csc<sup>n-2</sup>x  dv=csc<sup>2</sup>xdx
+
+Case 9: n = <b>Even</b>, m = <b>Odd</b>
+  a) ∫tan<sup>n</sup>xsec<sup>m</sup>xdx
+   = ∫(tan<sup>2</sup>x)<sup><sup>n</sup>/2</sup>sec<sup>m</sup>xdx
+       tan<sup>2</sup>x=sec<sup>2</sup>x-1
+
+  b) ∫cot<sup>n</sup>xcsc<sup>m</sup>xdx
+   = ∫(cot<sup>2</sup>x)<sup><sup>n</sup>/2</sup>csc<sup>m</sup>xdx
+       cot<sup>2</sup>x=csc<sup>2</sup>x-1
+
+</pre>
