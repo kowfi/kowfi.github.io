@@ -8,7 +8,7 @@ Step 1: Setting-up the Triangle
 let: a = constant, x = variable, f(x) = &radic;(&plusmn;a²&plusmn;x²)
      a cannot be in the Vertical Length/Opposite
 <b>First</b> case: &radic;(a²-x²)
-<b> [a²+(-<s>x</s>)²]+<s>x</s>²=a² </b>
+<b> [a²+(-<s>x</s>²)]+<s>x</s>²=a² </b>
    <b>></b> "isolated one is the Hypotenuse", the hypotenuse can only be 'a'
    <b>></b> Since 'a' comes first in <b>&radic;(a²-x²)</b>, the f(x) is in the Adjacent.
    <b>></b> Leaving x in the Opposite.
@@ -16,17 +16,17 @@ let: a = constant, x = variable, f(x) = &radic;(&plusmn;a²&plusmn;x²)
    /  \
   /    \
  /      \
-/        \*-------*
+/        \*-------'
 \   <b>a²</b>   / |      |
  \      /  |      |
   \    /   |  <b>x²</b>  |
    \  /    |      |
     \/&theta;)   |      |
-    *------*------*
+    *------*------'
      |     |
      |<b>a²-x²</b>|
      |     |
-     *-----*
+     '-----'
 
 <b>Second</b> case: &radic;(a²+x²)
 <b> [a²]+[x²]=a²+x² </b>
@@ -37,20 +37,20 @@ let: a = constant, x = variable, f(x) = &radic;(&plusmn;a²&plusmn;x²)
    /  \
   /    \
  /      \
-/        \*-------*
+/        \*-------'
 \ <b>a²+x²</b>  / |      |
  \      /  |      |
   \    /   |  <b>x²</b>  |
    \  /    |      |
     \/&theta;)   |      |
-    *------*------*
+    *------*------'
      |     |
      |  <b>a²</b> |
      |     |
-     *-----*
+     '-----'
 
 <b>Third</b> case: &radic;(x²-a²)
-<b> [x²+(-<s>a</s>)²]+<s>a</s>²=x² </b>
+<b> [x²+(-<s>a</s>²)]+<s>a</s>²=x² </b>
    <b>></b> "isolated one is the Hypotenuse", the hypotenuse can only be 'x'.
    <b>></b> Since 'a' cannot be in the Vectical Side, it's in the adjacent.
    <b>></b> Leaving the f(x) in the Opposite.
@@ -58,17 +58,17 @@ let: a = constant, x = variable, f(x) = &radic;(&plusmn;a²&plusmn;x²)
    /  \
   /    \
  /      \
-/        \*-------*
+/        \*-------'
 \   <b>x²</b>   / |      |
  \      /  |      |
   \    /   | <b>x²-a²</b>|
    \  /    |      |
     \/&theta;)   |      |
-    *------*------*
+    *------*------'
      |     |
      |  <b>a²</b> |
      |     |
-     *-----*
+     '-----'
 
 </pre>
 
@@ -84,10 +84,10 @@ if Case <b>One</b>:
  a /  |
   /   | x 
  /&theta;)  | 
-*-----*
+*-----'
 <b>&radic;(a²-x²)</b>
 use:
-     <b>sin&theta;</b> = <sup>x</sup>/<sub>2</sub>        ~~> To solve the x & dx
+     <b>sin&theta;</b> = <sup>x</sup>/<sub>a</sub>        ~~> To solve the x & dx
      <b>cos&theta;</b> = <sup>&radic;(a²-x²)</sup>/<sub>a</sub>  ~~> To solve for the &radic;(a²-x²)
 
 if Case Two:
@@ -97,7 +97,7 @@ if Case Two:
        /  |
       /   | x
      /&theta;)  |
-    *-----*
+    *-----'
        a
 use:
      <b>tan&theta;</b> = <sup>x</sup>/<sub>a</sub>        ~~> To solve the x & dx
@@ -110,7 +110,7 @@ if Case Three:
  x /  |
   /   | <b>&radic;(x²-a²)</b>
  /θ)  | 
-*-----*
+*-----'
    a
 use:
      <b>cos&theta;</b> = <sup>a</sup>/<sub>x</sub>        ~~> To solve the x & dx
