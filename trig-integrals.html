@@ -16,7 +16,7 @@ let: a = constant, x = variable, f(x) = &radic;(&plusmn;a²&plusmn;x²)
    /  \
   /    \
  /      \
-/        \*-------'
+/        \*-------.
 \   <b>a²</b>   / |      |
  \      /  |      |
   \    /   |  <b>x²</b>  |
@@ -37,7 +37,7 @@ let: a = constant, x = variable, f(x) = &radic;(&plusmn;a²&plusmn;x²)
    /  \
   /    \
  /      \
-/        \*-------'
+/        \*-------.
 \ <b>a²+x²</b>  / |      |
  \      /  |      |
   \    /   |  <b>x²</b>  |
@@ -58,7 +58,7 @@ let: a = constant, x = variable, f(x) = &radic;(&plusmn;a²&plusmn;x²)
    /  \
   /    \
  /      \
-/        \*-------'
+/        \,-------.
 \   <b>x²</b>   / |      |
  \      /  |      |
   \    /   | <b>x²-a²</b>|
@@ -78,7 +78,7 @@ Step 2: Get x, dx, and f(x)
 
 <pre>
 if Case <b>One</b>:
-      *
+      ,
      /|  
     / | 
  a /  |
@@ -104,7 +104,7 @@ use:
      <b>cos&theta;</b> = <sup>a</sup>/<sub>&radic;(a²+x²)</sub>  ~~> To solve for the &radic;(a²+x²)
 
 if Case Three:
-      *
+      ,
      /|  
     / | 
  x /  |
