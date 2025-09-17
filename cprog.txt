@@ -1,0 +1,36 @@
+
+Programming - telling a computer how to perform tasks.
+Programming level - hierarchy Low Level vs High Level.
+High level - english like instruction
+c++ considered high level
+Low level - 1 and 0, not human readable (You deal directly with the computer's basic operations)
+Assembly language - gumagamit ng mnemonic codes, isang low level language
+
+Algoritm - by psudocode or flowchart
+Psudocode: not a standard use common operator
+
+COMPUTE, CALCULATE, DETERMINE: This is used to calculate the result of an expression.
+SET, INIT: To initialize values
+INCREMENT, BUMP: To increase the value of a variable
+DECREMENT: To reduce the value of a variable
+mod - modular devision: only the remainder
+
+cout - output
+cin - input
+
+Interpreter - nagrarun kahit may error, ididisregard lang mga error. line per line [.py→run]
+Compiler - read the entire program before running
+Assembler - binabago ung extension before running it [.asm→A→.exe→run]
+
+Structure - kaylangan structured code mo para gumana
+si java naka virtual machine - kahit anong os gagana
+
+off - bit 0
+on - bit 1
+
+Alpha testing - by the team
+Beta testing - by users
+
+Syntax error - grammatical error
+Run time error - while running it, like an infinite loop error
+Logical error - program is running, but logically wrong
