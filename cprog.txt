@@ -6,7 +6,7 @@ c++ considered high level
 Low level - 1 and 0, not human readable (You deal directly with the computer's basic operations)
 Assembly language - gumagamit ng mnemonic codes, isang low level language
 
-Algoritm - by psudocode or flowchart
+Algoritm - step-step ex: psudocode or flowchart
 Psudocode: not a standard use common operator
 
 COMPUTE, CALCULATE, DETERMINE: This is used to calculate the result of an expression.
